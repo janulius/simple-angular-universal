@@ -12,7 +12,9 @@ import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({
+      appId: 'toh-universal'
+    }),
     FormsModule,
     AppRoutingModule
   ],
